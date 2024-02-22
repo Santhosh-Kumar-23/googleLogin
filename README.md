@@ -57,6 +57,8 @@ Go to your project root folder > android > app > keytool -genkeypair -v -storety
 keytool -genkeypair -v -storetype PKCS12 -keystore firebase.keystore -alias fb-alias -keyalg RSA -keysize 2048 -validity 10000
 ```
 
+## Ex: keytool -genkeypair -v -storetype PKCS12 -keystore <**keystore file name**> -alias <**alias name**> -keyalg RSA -keysize 2048 -validity 10000
+
 ![Alt text](image-1.png)
 
 enter password : santhosh@111
@@ -75,12 +77,10 @@ ii, Generate sha-1 and sha-256 key
 Go to your project root folder > android > app > keytool -list -v -keystore firebase.keystore fb-alias androiddebugkey -storepass santhosh@111 -keypass santhosh@111
 
 ```bash
-keytool -list -v -keystore firebase.keystore fb-alias androiddebugkey -storepass santhosh@111 -keypass santhosh@111
+keytool -list -v -keystore firebase.keystore fb-alias -storepass santhosh@111 -keypass santhosh@111
 ```
 
-keytool -list -v -keystore <**keystore file name**> <**alias name**> -storepass <**password**> -keypass <**password**>
-
-Ex : keytool -list -v -keystore firebase.keystore fb-alias -storepass santhosh@111 -keypass santhosh@111
+## EX: keytool -list -v -keystore <**keystore file name**> <**alias name**> -storepass <**password**> -keypass <**password**>
 
 finally you will get sha-1 and sha-256 key
 
