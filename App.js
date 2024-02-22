@@ -31,7 +31,7 @@ const App = () => {
     // Initial configuration
     GoogleSignin.configure({
       // Mandatory method to call before calling signIn()
-      scopes: ['https://www.googleapis.com/auth/drive.readonly'],
+      // scopes: ['https://www.googleapis.com/auth/drive.readonly'],
       // Repleace with your webClientId
       // Generated from Firebase console
       webClientId:

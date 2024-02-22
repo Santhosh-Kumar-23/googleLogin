@@ -4,10 +4,13 @@ Google Sign-in integration with React native app
 
 # Prerequisites
 
-Create firebase new project
-Integrate firebase setup
-Enable google sign-in provider method
-Generate sha-1 and sha-256 key(Mandatory)
+## Create firebase new project
+
+## Integrate firebase setup
+
+## Enable google sign-in provider method
+
+## Generate sha-1 and sha-256 key(Mandatory)
 
 ## Install Firebase and google sign-n React Native SDKS
 
