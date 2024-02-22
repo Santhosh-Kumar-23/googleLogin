@@ -53,6 +53,10 @@ i, Generate key store file
 
 Go to your project root folder > android > app > keytool -genkeypair -v -storetype PKCS12 -keystore firebase.keystore -alias fb-alias -keyalg RSA -keysize 2048 -validity 10000
 
+```bash
+keytool -genkeypair -v -storetype PKCS12 -keystore firebase.keystore -alias fb-alias -keyalg RSA -keysize 2048 -validity 10000
+```
+
 ![Alt text](image-1.png)
 
 enter password : santhosh@111
