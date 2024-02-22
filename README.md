@@ -47,9 +47,7 @@ apply plugin: 'com.google.gms.google-services' // <- Add this line
 
 ### Generate key store file andGenerate sha-1 and sha-256 key
 
-#### Method 1
-
-i, Generate key store file
+#### i, Generate key store file
 
 Go to your project root folder > android > app > keytool -genkeypair -v -storetype PKCS12 -keystore firebase.keystore -alias fb-alias -keyalg RSA -keysize 2048 -validity 10000
 
@@ -61,18 +59,25 @@ keytool -genkeypair -v -storetype PKCS12 -keystore firebase.keystore -alias fb-a
 
 ![Alt text](image-1.png)
 
-enter password : santhosh@111
-re enter password : santhosh@111
-what is your first and last name? : santhosh kumar
-what is the name of your organization unit? : demo organization
-what is the name of your organization ? : demo organization
-what is the name of your city or locality? : madurai
-what is the name of your state or province? : india
-what is the two-letter country code for this unit? : IN
+#### enter password : santhosh@111
+
+##### re enter password : santhosh@111
+
+#### what is your first and last name? : santhosh kumar
+
+#### what is the name of your organization unit? : demo organization
+
+#### what is the name of your organization ? : demo organization
+
+#### what is the name of your city or locality? : madurai
+
+#### what is the name of your state or province? : india
+
+#### what is the two-letter country code for this unit? : IN
 
 finally you will received your keystore file in your project root folder > android > app
 
-ii, Generate sha-1 and sha-256 key
+#### ii, Generate sha-1 and sha-256 key
 
 Go to your project root folder > android > app > keytool -list -v -keystore firebase.keystore fb-alias androiddebugkey -storepass santhosh@111 -keypass santhosh@111
 
